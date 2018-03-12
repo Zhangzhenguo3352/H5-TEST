@@ -1,0 +1,35 @@
+ <script src="./jquery.min.js"></script>
+ <script src="./fastclick.js"></script>
+<button>点我</button>
+<script>
+// 第一种
+if ('addEventListener' in document) {  
+    document.addEventListener('DOMContentLoaded', function() {  
+        FastClick.attach(document.body);  
+        $("button").on('click', function(e){  
+				$(this).hide(); 
+		});
+    }, false);  
+}  
+
+// 第二种
+// 如果你使用了JQuery，那么JS引入就可以改用下面的写法 
+
+	// $(function() {
+	// 	FastClick.attach(document.body);
+	// 	//点击头像修改，昵称修改
+	// 	$("button").on('click', function(e){  
+	// 			$(this).hide(); 
+	// 	});
+	// })
+</script>
+
+
+
+
+
+
+
+
+
+

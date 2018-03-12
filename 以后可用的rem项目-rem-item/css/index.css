@@ -1,0 +1,21 @@
+.content{
+
+}
+.content .header{
+	height: .7rem;
+	width: 100%;
+	margin: .6rem 0 .44rem 1.44rem;
+	overflow: hidden;
+}
+.content .header li{
+	float: left;
+	height: .7rem ;
+	width: 2.32rem;
+	background: #ccc;
+}
+.content .header li:first-of-type{
+	border-radius: .12rem 0 0 .12rem;
+}
+.content .header li:last-of-type{
+	border-radius: 0 .12rem .12rem 0;
+}

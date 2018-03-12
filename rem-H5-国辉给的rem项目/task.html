@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <script src="./zepto/jquery.min.js"></script>
+    <script src="./utils/fastclick.js"></script>
+    <script src="./utils/config.js"></script>
+    <script src="./utils/Util.js"></script>
+</head>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" media="(max-width: 800px)" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<body>
+	<div class="task_container">
+		<div id="task">
+			<h5 class="task_return"></h5>
+			<div class="task_content">
+				<ul class="task_tab">
+					<li class="task_tab_selected">任务</li>
+					<li>赚钱</li>
+					<li>一键领取</li>
+				</ul>
+				<div  class="task_do_task">
+					<ul class="task_content_detail clearfix">
+						<li>
+							<h3 class="task_time"><b>00:54</b><span></span></h3>
+							<h4>打扫卫生</h4>
+							<img src="./assets/images/task_clean.png">
+							<p class="task_get">领取</p>
+						</li>
+						<li>
+							<h3 class="task_time"><b>00:54</b><span></span></h3>
+							<h4>跳舞</h4>
+							<img src="./assets/images/task_dance.png">
+							<p class="task_fast">加速</p>
+						</li>
+						<li>
+							<h3 class="task_wait">等待</h3>
+							<h4>看电影</h4>
+							<img src="./assets/images/task_movie.png">
+							<p class="task_stop">中止</p>
+						</li>
+						<li class="task_add">
+		 					<h4>添加任务</h4>
+							<img src="./assets/images/task_add.png">
+		 				</li>
+					</ul>
+					<p class="task_content_detail_tab"><span></span><span></span></p>
+				</div>
+	 			<dl class="task_make_money">
+					<dt>
+						<p>职位：实习生</p>
+						<p>薪水：800金币</p>
+						<p>时长：3分钟</p>
+						<p>下一级：职员</p>
+					</dt>
+					<dd>
+						<ul class="task_content_detail task_content_detail_make_money">
+							<li>
+								<h3 class="task_time"><b>00:54</b><span></span></h3>					<h4>工作</h4>
+								<img src="./assets/images/task_work.png">
+								<p>可能次数3/3</p>
+							</li>
+							<li>
+								<h4>升职</h4>
+								<img src="./assets/images/task_promotion.png">
+								<p>8000
+									<img src="./assets/images/index_gold.png">
+								</p>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+ 		<div class="task_gift_list">
+			<h2 class="task_title"><span>返回</span>任务</h2>	
+			<ul class="task_gift_list_content">
+				<li>
+					<dl>
+						<dt>
+							<img src="./assets/images/task_list_women.png">
+ 						</dt>
+						<dd>
+							<h4>打羽毛球</h4>
+							<p>亲密度+32</p>
+							<p>消耗时间：02：30</p>
+						</dd>
+					</dl>
+					<p class="task_gift_list_speed">加速</p>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<img src="./assets/images/task_list_women.png">
+ 						</dt>
+						<dd>
+							<h4>打羽毛球</h4>
+							<p>亲密度+32</p>
+							<p>消耗时间：02：30</p>
+						</dd>
+					</dl>
+					<p class="task_gift_list_wait">等待</p>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<img src="./assets/images/task_list_women.png">
+							<span></span>
+ 						</dt>
+						<dd>
+							<h4>打羽毛球</h4>
+							<p>亲密度+32</p>
+							<p>消耗时间：02：30</p>
+						</dd>
+					</dl>
+					<p class="task_gift_list_wait">等待</p>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<img src="./assets/images/task_list_women.png">
+							<span></span>
+ 						</dt>
+						<dd>
+							<h4>打羽毛球</h4>
+							<p>亲密度+32</p>
+							<p>消耗时间：02：30</p>
+						</dd>
+					</dl>
+					<p class="task_gift_list_start"><span>开始</span><span>2000</span></p>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<img src="./assets/images/task_list_women.png">
+							<span class="task_gift_list_lock"></span>
+ 						</dt>
+						<dd>
+							<h4>打羽毛球</h4>
+							<p>亲密度+32</p>
+							<p>消耗时间：02：30</p>
+						</dd>
+					</dl>
+					<p class="task_gift_list_unlock">65关解锁</p>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<img src="./assets/images/task_list_women.png">
+							<span></span>
+ 						</dt>
+						<dd>
+							<h4>打羽毛球</h4>
+							<p>亲密度+32</p>
+							<p>消耗时间：02：30</p>
+						</dd>
+					</dl>
+					<p class="task_gift_list_get">领取</p>
+				</li>
+			</ul>
+			<div class="task_gift_list_mask">
+				<p>获得好感度*165</p>
+				<div class="task_gift_list_mask_speed">
+					<p>加速完成</p>
+					<p>快速完成需要消耗15钻石，是否继续？</p>
+					<p style="display: none"></p>
+					<p>
+						<span>取消</span>
+						<span class="confirm">确定</span>
+					</p>
+				</div>
+			</div>
+		</div>
+ 	</div>
+ 	<script src="js/index.js"></script>
+</body>
+</html>

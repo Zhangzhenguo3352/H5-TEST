@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+     <script src="./zepto/jquery.min.js"></script>
+     <script src="./utils/fastclick.js"></script>
+     <script src="./utils/swiper.min.js"></script>
+    <script src="./utils/demoUtils.js"></script>
+    <script src="./utils/iscroll-probe.js"></script>
+     <!--对接SP--> 
+     <script src="./utils/rem.js"></script>
+     <script src="./utils/Util.js"></script>
+     <script src="./zepto/toast.js"></script>
+    <!-- <script>var game_version="20180227" ;var uid="lJfggfgemwsJn0Tw=";var channel="baisi" </script>
+	<script src="http://h5.mobo168.com/open/sdk/ldgame.js"></script>  -->
+	<script src="./utils/config.js"></script>
+    
+</head>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<body>
+<!-- -------------------首页开始------------------------------>
+	<div id="chat_img"></div>
+	<audio src="" class="call_audio" autoplay loop></audio>
+	<video class="index_background_video index_video" src="http://gf.omdatu.com:81/res/homevideo/home_video.mp4" autoplay loop webkit-playsinline="true" playsinline="true">
+	</video>
+	<div class="chat_video_control">
+		<span></span>
+		<video  class="index_background_video chat_video" autoplay loop webkit-playsinline="true" playsinline="true">
+		</video>
+	</div>
+	<div class="video_list_control">
+		<span></span>
+		<video  class="index_background_videolist video_list" autoplay loop webkit-playsinline="true" playsinline="true">
+		</video>
+	</div>
+ 	<div id="index">
+		<div id="index_mask_hide" class="index_head_img">
+			<img id="index_mask_hide" src="./assets/images/index_head.png">
+			<h2 id="index_mask_hide">旧岛空心</h2>
+		</div>
+		<div class="index_Wealth_value">
+			<img class="Wealth_value_left" src="./assets/images/index_gold.png">
+			<span>95</span>
+			<img class="Wealth_value_right" src="./assets/images/index_add.png">
+		</div>
+		<div class="index_diamond_value">
+			<img class="diamond_value_left" src="./assets/images/index_diamond.png">
+			<span>1100</span>
+			<img class="diamond_value_right" src="./assets/images/index_add.png">
+		</div>
+		<div class="index_chapter">
+			<span><b>第80章</b><b>与你相遇好幸运</b></span>
+			<img class="index_chapter_arrow" src="./assets/images/index_chapter_arrow.png"> 
+		</div>
+		<div class="index_intimacy">
+			<p class="index_intimacy_degree"></p>
+			<div class="index_intimacy_content">
+				<img src="./assets/images/index_intimacy.png">
+				<span>16/27</span>
+			</div>
+		</div>
+		<div class="index_phone_infor">
+			<img class="index_phone_actress_img" src="./assets/images/index_phone_actress.png">
+			<p>林欣溪</p>
+			<img class="index_answer_img" src="./assets/images/index_answer.png">
+			<img class="index_phone_reject_img" src="./assets/images/index_phone_reject.png">
+		</div>
+		<div class="index_wechat_infor">
+			<dl>
+				<dt>
+					<img class="index_wechat_infor_img" src="./assets/images/index_wechat_infor.png">
+				</dt>
+				<dd>
+					<p>微信</p>
+					<p  class="index_wechat_infor_name"><span>旧岛空心</span>发来1条消息</p>
+				</dd>
+			</dl>
+ 		</div>
+		<div class="index_shop">
+			<img class="index_shop_img" src="./assets/images/index_shop.png">
+			<p>商店</p>
+		</div>
+		<div class="index_phone">
+			<img  class="index_phone_img" src="./assets/images/index_phone.png">
+			<p>打电话</p>
+			<h2 class="index_common_reminder"></h2>
+		</div>
+		<div class="index_moments">
+			<img  class="index_moments_img" src="./assets/images/index_moments.png">
+			<p>朋友圈</p>
+			<h2 class="index_common_reminder"></h2>
+		</div>
+		<div class="index_wechat">
+			<img  class="index_wechat_img" src="./assets/images/index_wechat.png">
+			<p>微信</p>
+			<h2 class="index_common_reminder"></h2>
+		</div>
+		<div class="index_appointment">
+			<img  class="index_appointment_img" src="./assets/images/index_appointment.png">
+			<p>约会</p>
+			<h2 class="index_common_reminder"></h2>
+		</div>
+		<div class="index_task">
+			<p>任务</p>
+			<img  class="index_task_img" src="./assets/images/index_task.png">
+			<h2 class="index_task_reminder"></h2>
+		</div>
+		<div class="index_live">
+			<h3 class="index_live_img"><span></span>直播中</h3>
+			<img class="index_actress_img" src="./assets/images/index_actress.png">
+		</div>
+		<div class="index_mask" id="index_mask_hide">
+			<div class="index_mask_personal_homepage" id="index_mask_hide">
+				<img id="index_mask_hide" src="./assets/images/index_head.png">
+				<span id="index_mask_hide"></span>
+				<p id="index_mask_hide">
+					<b id="index_mask_hide">旧岛空心</b><span id="index_mask_hide"></span>
+				</p>
+			</div>
+			<div class="index_mask_image_change" id="index_mask_hide">
+				<h3 id="index_mask_hide"><span>取消</span></h3>
+				<p id="index_mask_hide">
+					<span id="index_mask_hide"></span>拍一张
+				</p>
+				<p id="index_mask_hide">	
+					<span id="index_mask_hide"></span>从相册选取
+				</p>	
+			</div>
+		</div>
+	</div>
+ 	<div id="video_list"></div>
+ 	<div id="moments"></div>
+  	<div id="living"></div> 
+ 	<div id="call"></div>
+ 	<div id="call_log"></div>
+ 	<div id="chitchat"></div>
+ 	<div id="dialogue_log"></div>
+	<div id="name_change"></div>
+ 	<div id="pay"></div>
+	<div id="shop"></div>
+ 	<div id="vido_mask" class="task_gift_list_mask">
+ 		<p style="display: none">获得好感度*165</p>
+		<div class="task_gift_list_mask_speed vido_mask_ribbons">
+			<p>彩带视频</p>
+			<p>眼镜在为你下雨，心却在为你打伞</p>
+			<p>
+				<span>-80</span>
+				<span></span>
+				<span>+52</span>
+			</p>		
+			<p>
+				<span>取消</span>
+				<span>观看</span>
+			</p>
+		</div>		 	
+		<div class="vido_mask_general">
+		 	<ul>
+ 		 		<li>
+					<p>那就继续看吧！</p>
+					<p>
+						<span>-80</span>
+						<span></span>
+						<span>+52</span>
+					</p>
+ 		 		</li>
+ 		 		<li>
+					<h2>算了，还是赶紧出去吧！</h2>
+ 		 		</li>
+  		 	</ul>	 	
+ 		</div>
+ 		<div class="task_gift_list_mask_speed chat_msg paySuccess">
+			<p>金币消息</p>
+			<p>加速信息回复，需要消耗10金币，您余额还差<b>3</b>金币！</p>
+			<p style="display: none"></p>
+			<p>
+				<span>取消</span>
+				<span class="confirm">确定</span>
+			</p>
+		</div>	
+  	</div>
+ 	<div class="fullscreen"><img/></div>
+ 	<div class="task_container"></div>
+ 	<script src="js/call.js"></script>
+	<script src="js/callLog.js"></script>
+	<script src="js/chitchat.js"></script>
+	<script src="js/dialogueLog.js"></script>
+	<script src="js/living.js"></script>
+	<script src="js/moments.js"></script>
+	<script src="js/pay.js"></script>
+	<script src="js/shop.js"></script>
+	<script src="js/task.js"></script>
+	<script src="js/videoList.js"></script>
+	<script src="js/videoMask.js"></script>
+	<script src="js/index.js"></script>
+ </body>
+</html>
